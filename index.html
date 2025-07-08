@@ -7,9 +7,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Acme Productivity App</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> ถ้าใช้ AI gen code มาช่วย review ซ้ำอีกทีก่อนนะครับ -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<!-- <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+</style> -->
 <body class="bg-[#F6F6FB]">
   <!-- Navbar -->
   <nav class="flex justify-center px-6 py-6 fixed top-0 right-0 left-0 z-50">
@@ -42,7 +49,7 @@
   </section>
 
   <!-- Feature-Section -->
-  <section class="features-section flex justify-center gap-5 px-28 py-28 bg-[#F6F6FB] font-['Roboto'] flex-wrap">
+  <section class=" flex justify-center gap-5 px-28 py-28 bg-[#F6F6FB] font-['Roboto'] flex-wrap w-screen">
 
     <!-- Card 1 -->
     <div class="card-1 bg-blue-100 p-10 rounded-3xl w-96 h-72 text-left">
@@ -77,7 +84,37 @@
         Our user-friendly interface makes it easy for anyone to streamline their workflow.
       </p>
     </div>
-  </section>
 
+  </section>
+  
+  <!-- Card 4 -->
+  <div class="flex justify-center items-center w-screen">
+    <div class="flex flex-col justify-center items-center h-[666px] w-[1199px] bg-white rounded-3xl">
+      <div class="text-[44px] font-bold">Get in touch</div>
+        <div class="text-">
+        <label for="Name" class="font-light text-[#5f5f76]">Name</label>
+        <input type="text" name="name" id="Name" placeholder="John Doe" class="block border border-gray-300 h-[56px] w-[589px] rounded-[16px] mb-[20px] py-2 px-4">
+  
+        <label for="Email" class="font-light text-[#5f5f76]">Email</label>
+        <input type="email" name="email" id="Email" placeholder="john.@example.com" class="block border border-gray-300 h-[56px] w-[589px] rounded-[16px] mb-[20px] py-2 px-4">
+        
+        <label for="Message" class="font-light text-[#5f5f76]">Message</label>
+        <textarea name="message" id="Message" placeholder="Your message here..." class="block border border-gray-300 h-[102px] w-[589px] rounded-[16px] mb-[20px] py-2 px-4"></textarea>
+        </div>
+        <button type="submit" class="bg-gray-900 text-white h-[56px] w-[589px] rounded-[16px] mt-[20px] hover:bg-gray-800">Submit</button>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="flex justify-center items-center">
+    <footer class="flex justify-between w-[1199px] my-[80px]">
+      <div class="text-[#5f5f76]">Acme Productivity app ©2024</div>
+      <ul class="flex gap-[37px]">
+        <li>FAQ</li>
+        <li>Term</li>
+        <li>AI Policy</li>
+        <li>Pricing</li>
+      </ul>
+    </footer>
+  </div>
 </body>
 </html>

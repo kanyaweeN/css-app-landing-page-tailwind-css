@@ -103,52 +103,46 @@
 
   </section>
 
-  <!-- Card 4 -->
-  <div class="flex justify-center items-center w-screen">
-    <div class="flex flex-col justify-center items-center h-[666px] w-[1199px] bg-white rounded-3xl">
-      <div class="text-5xl font-bold text-[#1A1A2C ]"
-      >
+  <!-- Contact Form -->
+<div class="flex justify-center items-center w-full px-4">
+  <div class="flex flex-col justify-center items-center bg-white rounded-3xl w-full max-w-[1199px] py-12 px-6">
+    <div class="text-3xl md:text-5xl font-bold text-[#1A1A2C] text-center mb-8">
       Get in touch
     </div>
-      <div class="text-">
-        <label for="Name" class="font-light text-[#5f5f76]">Name</label>
-        <input type="text" name="name" id="Name" placeholder="John Doe"
-          class="block border border-[#E0E0ED] h-[56px] w-[589px] rounded-[16px] mb-[20px] p-3
-          hover:border-[#B5A9FF] focus:border-[#5E44FF]"
-          >
+    <div class="w-full max-w-[589px]">
+      <label for="Name" class="font-light text-[#5f5f76]">Name</label>
+      <input type="text" name="name" id="Name" placeholder="John Doe"
+        class="block border border-[#E0E0ED] h-[56px] w-full rounded-[16px] mb-[20px] p-3 hover:border-[#B5A9FF] focus:border-[#5E44FF]">
 
-        <label for="Email" class="font-light text-[#5f5f76]">Email</label>
-        <input type="email" name="email" id="Email" placeholder="john.@example.com"
-          class="block border border-[#E0E0ED] h-[56px] w-[589px] rounded-[16px] mb-[20px] p-3
-          hover:border-[#B5A9FF] focus:border-[#5E44FF]"
-          >
+      <label for="Email" class="font-light text-[#5f5f76]">Email</label>
+      <input type="email" name="email" id="Email" placeholder="john.@example.com"
+        class="block border border-[#E0E0ED] h-[56px] w-full rounded-[16px] mb-[20px] p-3 hover:border-[#B5A9FF] focus:border-[#5E44FF]">
 
-        <label for="Message" class="font-light text-[#5f5f76]">Message</label>
-        <textarea name="message" id="Message" placeholder="Your message here..."
-          class="block border border-[#E0E0ED] h-[102px] w-[589px] rounded-[16px] mb-[20px] p-3 
-          hover:border-[#B5A9FF] focus:border-[#5E44FF]"
-          >
-        </textarea>
-      </div>
-      <button type="submit" class="bg-[#1A1A2C] text-white h-[56px] w-[589px] rounded-[16px] mt-[20px] 
-        hover:bg-[#5F5F76] focus:bg-[#35354D]
-        focus:ring-2 focus:ring-[5F5F76]">
-        Submit
-      </button>
+      <label for="Message" class="font-light text-[#5f5f76]">Message</label>
+      <textarea name="message" id="Message" placeholder="Your message here..."
+        class="block border border-[#E0E0ED] h-[102px] w-full rounded-[16px] mb-[20px] p-3 hover:border-[#B5A9FF] focus:border-[#5E44FF]"></textarea>
     </div>
+    <button type="submit"
+      class="bg-[#1A1A2C] text-white h-[56px] w-full max-w-[589px] rounded-[16px] mt-[20px] hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-2 focus:ring-[#5F5F76]">
+      Submit
+    </button>
   </div>
-  <!-- footer -->
-  <div class="flex justify-center items-center">
-    <footer class="flex justify-between w-[1199px] my-[80px]">
-      <div class="text-[#5f5f76]">Acme Productivity app ©2024</div>
-      <ul class="flex gap-[37px]">
-        <li>FAQ</li>
-        <li>Term</li>
-        <li>AI Policy</li>
-        <li>Pricing</li>
-      </ul>
-    </footer>
-  </div>
+</div>
+
+<!-- Footer -->
+<div class="flex justify-center items-center px-4">
+  <footer
+    class="flex flex-col md:flex-row justify-between items-center w-full max-w-[1199px] my-[80px] gap-6 text-center md:text-left">
+    <div class="text-[#5f5f76]">Acme Productivity app ©2024</div>
+    <ul class="flex flex-wrap justify-center gap-6 md:gap-[37px]">
+      <li>FAQ</li>
+      <li>Terms</li>
+      <li>AI Policy</li>
+      <li>Pricing</li>
+    </ul>
+  </footer>
+</div>
+
 </body>
 
 </html>
